@@ -28,8 +28,8 @@ class _MainScreenState extends State<MainScreen> {
 
             Image(
                 image: firstImage
-                    ? AssetImage("assets/images/main_1.png")
-                    : AssetImage("assets/images/main_2.png")),
+                    ? AssetImage("assets/images/main_2.png")
+                    : AssetImage("assets/images/main_1.png")),
             Spacer(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 35,vertical: 50),
@@ -45,13 +45,7 @@ class _MainScreenState extends State<MainScreen> {
                         padding: EdgeInsets.symmetric( vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+                        ),),),),],),),
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Image(image: AssetImage("assets/images/masar.png")),

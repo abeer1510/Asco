@@ -1,5 +1,8 @@
+import 'package:asco/screens/home_screen.dart';
+import 'package:asco/screens/login_screen.dart';
 import 'package:asco/screens/main_screen.dart';
 import 'package:asco/screens/onboarding.dart';
+import 'package:asco/screens/register_screen.dart';
 import 'package:asco/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +21,10 @@ class MyApp extends StatelessWidget {
       routes: {
         MainScreen.routeName:(context)=>MainScreen(),
         SplashScreen.routeName:(context)=>SplashScreen(),
-        Onboarding.routeName:(context)=>Onboarding(),
+        OnBoardingScreen.routeName:(context)=>OnBoardingScreen(),
+        LoginScreen.routeName:(context)=>LoginScreen(),
+        RegisterScreen.routeName:(context)=>RegisterScreen(),
+        HomeScreen.routName:(context)=>HomeScreen(),
       },
     );
   }
