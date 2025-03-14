@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class LightTheme extends BaseTheme{
   @override
-  Color get backgroundColor => Color(0xffffffff);
+  Color get backgroundColor => Colors.white;
 
   @override
   Color get primaryColor => Color(0xffBC1E1E);
@@ -21,11 +21,8 @@ class LightTheme extends BaseTheme{
       scaffoldBackgroundColor: backgroundColor,
 
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        backgroundColor: primaryColor,
         showSelectedLabels: true,
         showUnselectedLabels: true,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
