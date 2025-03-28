@@ -1,10 +1,10 @@
-import 'package:asco/items/drawe_item.dart';
-import 'package:asco/screens/call_us.dart';
-import 'package:asco/screens/language.dart';
-import 'package:asco/screens/login_screen.dart';
-import 'package:asco/screens/notification.dart';
-import 'package:asco/screens/privacy.dart';
-import 'package:asco/screens/request_line.dart';
+import 'package:asco/screens/home/drawe_item.dart';
+import 'package:asco/screens/call_us_screen.dart';
+import 'package:asco/screens/language/language_screen.dart';
+import 'package:asco/screens/login/login_screen.dart';
+import 'package:asco/screens/notification/notification_screen.dart';
+import 'package:asco/screens/privacy/privacy_screen.dart';
+import 'package:asco/screens/request/request_line_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -35,7 +35,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30,),
-                DraweItem(text: " Call Us",image:"call" ,onTap: (){Navigator.pushNamed(context, RequestLine.routeName);},),
+                DraweItem(text: " Call Us",image:"call" ,onTap: (){Navigator.pushNamed(context, CallUs.routeName);},),
 
                 DraweItem(text: " Request a line ",image:"request" ,onTap: (){Navigator.pushNamed(context, RequestLine.routeName);},),
 

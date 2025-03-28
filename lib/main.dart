@@ -1,15 +1,18 @@
-import 'package:asco/screens/call_us.dart';
-import 'package:asco/screens/home_screen.dart';
-import 'package:asco/screens/language.dart';
-import 'package:asco/screens/login_screen.dart';
+import 'package:asco/screens/call_us_screen.dart';
+import 'package:asco/screens/home/home_screen.dart';
+import 'package:asco/screens/home/taps/my_package/my_package.dart';
+import 'package:asco/screens/home/taps/trips_tap.dart';
+import 'package:asco/screens/language/language_screen.dart';
+import 'package:asco/screens/login/login_screen.dart';
 import 'package:asco/screens/main_screen.dart';
-import 'package:asco/screens/notification.dart';
-import 'package:asco/screens/onboarding.dart';
-import 'package:asco/screens/privacy.dart';
-import 'package:asco/screens/register_screen.dart';
-import 'package:asco/screens/request_line.dart';
+import 'package:asco/screens/notification/notification_screen.dart';
+import 'package:asco/screens/onboarding_screen.dart';
+import 'package:asco/screens/payment/payment_screen.dart';
+import 'package:asco/screens/privacy/privacy_screen.dart';
+import 'package:asco/screens/register_screen/register_screen.dart';
+import 'package:asco/screens/request/request_line_screen.dart';
 import 'package:asco/screens/splash_screen.dart';
-import 'package:asco/screens/subscribe_screen.dart';
+import 'package:asco/screens/subcribe/subscribe_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -37,6 +40,8 @@ class MyApp extends StatelessWidget {
         Language.routeName:(context)=>Language(),
         Notifications.routeName:(context)=>Notifications(),
         SubscribeScreen.routeName:(context)=>SubscribeScreen(),
+        PaymentScreen.routeName:(context)=>PaymentScreen(paymentMethod: '',),
+
       },
     );
   }

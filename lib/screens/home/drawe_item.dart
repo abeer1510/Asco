@@ -1,4 +1,4 @@
-import 'package:asco/screens/call_us.dart';
+import 'package:asco/screens/call_us_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ class DraweItem extends StatelessWidget {
             InkWell(
               onTap: onTap,
               child: Text(text,style: Theme.of(context).textTheme.titleSmall!.
-              copyWith(fontSize: 18,fontWeight: FontWeight.w400,color: Color(
+              copyWith(fontSize: 16,fontWeight: FontWeight.w400,color: Color(
                   0x80000000)),),
             )
           ],),

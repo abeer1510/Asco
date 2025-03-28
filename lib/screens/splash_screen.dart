@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:asco/screens/onboarding.dart';
+import 'package:asco/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -12,7 +12,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Start a timer for 3 seconds
     Timer(Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => OnBoardingScreen()),
